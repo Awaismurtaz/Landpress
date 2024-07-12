@@ -1,0 +1,926 @@
+body {
+    margin: 0 !important;
+    box-sizing: border-box;
+    font-family: "Plus Jakarta Sans", sans-serif !important;
+}
+
+.header .active {
+    background-color: #F7F7F8;
+    position: fixed;
+    z-index: 9999;
+    width: 100%;
+    transition: 1s ease;
+}
+
+.mainHeader {
+    background-color: #CDE4E4;
+    padding-bottom: 100px;
+}
+
+.header .navbar {
+    padding: 20px 0px !important;
+    margin-top: -1px;
+}
+
+.header .navbar {
+    display: flex;
+    gap: 20px !important;
+}
+
+.navCollapse {
+    padding-right: 20px !important;
+}
+
+
+.navbar .navbar-nav .nav-item {
+    position: relative;
+}
+
+.navbar .navbar-nav .nav-item::after {
+    position: absolute;
+    bottom: 0px;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    content: "";
+    background-color: black;
+    width: 0%;
+    height: 2px;
+    transition: all 0.5s;
+}
+
+.navbar .navbar-nav .nav-item:hover::after {
+    width: 100%;
+}
+
+
+.header .navbar .navbar-nav {
+    display: flex;
+    gap: 20px;
+}
+
+.header .navbar .nav-buttons button {
+    padding: 13px 25px !important;
+    font-weight: 600;
+    color: #090909;
+    font-size: 16px;
+}
+
+.header .navbar .nav-buttons button:hover {
+    background-color: #ffdb80 !important;
+}
+
+.header .navbar .nav-buttons .booking:hover {
+    border-color: #ffdb80 !important;
+}
+
+.header .navbar .nav-buttons .connect {
+    color: #ffff !important;
+    background-color: #090909;
+}
+
+.header .navbar .nav-buttons .connect:hover {
+    border-color: #ffdb80 !important;
+    color: #090909 !important;
+}
+
+.nav_item {
+    color: #090909;
+    font-size: 16px;
+    font-weight: 600 !important;
+}
+
+.landingImage {
+    background-image: url(../images/10017.jpg);
+    height: 500px;
+    width: auto;
+    background-position: center;
+    background-size: cover;
+    animation: animate 5s ease-in-out infinite;
+    transition: all 1s ease-in-out;
+    margin: 20px;
+    box-shadow: rgb(108 160 211) 0px 8px 24px;
+}
+
+@keyframes animate {
+
+    0%,
+    100% {
+        border-radius: 60% 40% 30% 70% /60% 30% 70% 40%;
+    }
+
+    50% {
+        border-radius: 30% 60% 70% 40% /40% 60% 70% 30%;
+    }
+}
+
+.textBox h1 {
+    font-size: 55px;
+    color: #090909;
+    font-weight: 600;
+}
+
+.textBox .text {
+    max-width: 65%;
+    padding: 20px 0px;
+}
+
+.textBox .text p {
+    font-size: 18px;
+}
+
+.landingSection {
+    padding-top: 40px;
+}
+
+
+.landingButtons button {
+    padding: 13px 25px;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.landingButtons button:hover {
+    background-color: #ffff;
+    color: #090909;
+    border: 1px solid #ffff;
+}
+
+.landingButtons .trail {
+    background-color: #090909;
+}
+
+.landingButtons .watchVideo {
+    color: #090909 !important;
+}
+
+.mainText {
+    position: relative;
+}
+
+.textcategory {
+    position: absolute;
+    top: 0;
+    right: 6%;
+    height: 65px;
+    overflow: hidden;
+}
+
+
+
+.textcategory ul {
+    font-size: 55px;
+    list-style: none;
+    font-weight: 600;
+    color: #090909;
+    animation: textAnimate 14s linear infinite;
+    transition: all 1s ease;
+}
+
+@keyframes textAnimate {
+    0% {
+        transform: translateY(0px);
+    }
+
+    40% {
+        transform: translateY(0px);
+    }
+
+    60% {
+        transform: translateY(-35px);
+    }
+
+    80%,
+    100% {
+        transform: translateY(-168px);
+    }
+}
+
+.imagesBox {
+    position: relative;
+}
+
+.publishing {
+    position: absolute;
+    top: 0;
+    right: -100px;
+}
+
+.publishing img {
+    background-color: #ffffff99;
+}
+
+.colaboration {
+    position: absolute;
+    bottom: 14px;
+    right: -100px;
+}
+
+.colaboration img {
+    background-color: #ffffff99;
+}
+
+.engament {
+    position: absolute;
+    bottom: 10rem;
+}
+
+.engament img {
+    background-color: #ffffff99;
+}
+
+.checkBox {
+    display: flex;
+    align-items: center;
+}
+
+.checksIcon {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    flex-wrap: wrap;
+    padding-top: 40px;
+}
+
+.checkIcon {
+    background-color: #ffff;
+    padding: 4px;
+    border-radius: 30px;
+    margin-right: 10px;
+}
+
+
+.service {
+    padding: 80px 0px;
+}
+
+.serviceTitle {
+    padding-bottom: 30px;
+}
+
+.serviceTitle span {
+    padding: 5px 10px;
+    background-color: #ffdb80;
+    text-transform: uppercase;
+    font-weight: 600 !important;
+    border-radius: 5px;
+    font-size: 14px;
+}
+
+.serviceHeading {
+    font-size: 18px;
+    color: #aa9a9a;
+}
+
+.serviceText button {
+    float: right;
+}
+
+.publishText p {
+    color: #aa9a9a;
+}
+
+.publishingCardBody {
+    padding: 41px 37px;
+}
+
+.imgbox {
+    background-image: url(../images/10005.png);
+    width: 100%;
+    height: auto;
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.imageBox-2 {
+    background-image: url(../images/10005.png);
+    width: 100%;
+    height: auto;
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.analytics .card .card-body img {
+    width: 100%;
+}
+
+.publish {
+    padding-bottom: 100px;
+}
+
+.darkSection {
+    background-color: #090909;
+    padding: 100px 0px;
+}
+
+.mainStories .storiesHeading span {
+    padding: 5px 10px;
+    background-color: #ffdb80;
+    font-weight: 700 !important;
+    border-radius: 5px;
+    font-size: 14px;
+}
+
+.storiesText,
+.storiesTitle {
+    color: #ffff;
+}
+
+.horzintalLine {
+    border: 1px solid gray;
+    margin: 70px 0px;
+}
+
+.w-100 {
+    width: 100%;
+}
+
+.stories-btn {
+    background-color: #CDE4E4;
+    border-color: #CDE4E4;
+    color: #090909;
+    font-weight: 600;
+    float: right;
+}
+
+.stories-btn:hover {
+    background-color: #ffdb80;
+    border-color: #ffdb80;
+    color: #090909;
+}
+
+.finPathTest h1,
+.finPathTest p {
+    color: #ffff;
+}
+
+.token {
+    padding: 5px 8px;
+    border-radius: 4px;
+    color: #ffdb80;
+    border: 1px solid #bab3b3ab;
+}
+
+.sky_btn {
+    padding: 13px 25px;
+    background-color: #CDE4E4;
+    border-color: #CDE4E4;
+    color: #090909;
+    font-weight: 600;
+    position: absolute;
+    bottom: 0;
+}
+
+.sky_btn:hover {
+    background-color: #ffdb80;
+    border-color: #ffdb80;
+    color: #090909;
+}
+
+.finPathGrid {
+    position: relative;
+}
+
+.ratingSection {
+    padding: 0px 0px 100px 0px
+}
+
+.ratingSection .mainBox .col .card {
+    background-color: #F7F7F8;
+    border: none;
+    padding: 10px;
+}
+
+.ratingSection .mainBox .col .card .card-body h4 {
+    font-weight: 600;
+    color: #090909;
+    padding-bottom: 20px;
+    font-size: 20px;
+}
+
+.ratingSection .mainBox .col .card .card-body .bodyData img {
+    border-radius: 78px;
+    object-fit: contain;
+}
+
+.ratingSection .mainBox .col .card .card-body .bodyData {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.ratingSection .mainBox .col .card .card-body .bodyData .info p {
+    margin-top: unset;
+    margin-bottom: unset;
+}
+
+.ratingSection .mainBox .col .card .card-body .bodyData .info .name {
+    font-size: 18px;
+    font-weight: 600;
+    color: #090909;
+}
+
+.ratingSection .mainBox .col .card .card-body .bodyData .info .title {
+    font-size: 16px;
+    color: #aa9a9a;
+}
+
+.ratingDetail {
+    padding-top: 20px;
+}
+
+.ratingDetail p {
+    margin: unset;
+}
+
+.ratingDetail .ratingValue {
+    font-size: 30px;
+    font-weight: 700;
+    color: #090909;
+}
+
+.ratingDetail .ratingText {
+    font-size: 16px;
+    font-weight: 600;
+    color: #090909;
+}
+
+.integrationSection {
+    padding: 0px 0px 100px 0px;
+}
+
+.contactRow .TextBox .title,
+.integrationTextBox .title {
+    font-size: 45px;
+    color: #090909;
+    font-weight: 700;
+    padding: 20px 0px;
+}
+
+.integrationTextBox .detail {
+    font-size: 18px;
+    color: #aa9a9a;
+    line-height: 2rem;
+}
+
+.integrationTextBox .list {
+    list-style: none;
+    padding-left: unset;
+}
+
+.integrationTextBox .list li {
+    padding: 10px 0px;
+}
+
+.mainIntegration .imagBox {
+    position: relative;
+}
+
+.mainIntegration .backImage {
+    background-image: url(../images/10014.jpg);
+    height: 30rem;
+    width: auto;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+}
+
+.mainIntegration .imagBox img {
+    position: absolute;
+    top: 134px;
+    left: -83px;
+}
+
+.list .checkIcon {
+    background-color: #CDE4E4;
+    padding: 4px;
+    border-radius: 30px;
+    margin-right: 10px;
+}
+
+.contactRow {
+    background-color: #CDE4E4;
+    padding: 50px;
+    border-radius: 10px;
+}
+
+.contactRow .TextBox .badg {
+    background-color: #F7F7F8;
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+
+.contactRow .TextBox .detail {
+    font-size: 18px;
+    color: #090909;
+}
+
+.contactRow .list {
+    list-style: none;
+    padding-left: unset;
+}
+
+.contactRow .list li {
+    padding: 10px 0px;
+    font-size: 16px;
+    font-weight: 600;
+    color: #090909;
+}
+
+.contactRow .list .checkIcon {
+    background-color: #FFFF;
+    padding: 4px;
+    border-radius: 30px;
+    margin-right: 10px;
+}
+
+/* footer */
+.footer .mainBox {
+    padding: 100px 0px;
+}
+
+.textGray {
+    color: #aa9a9a;
+}
+
+.footerList h5 {
+    font-weight: 600;
+    color: #090909;
+    font-size: 18px
+}
+
+.footerList ul {
+    list-style: none;
+    padding-left: unset;
+}
+
+.footerList ul li {
+    padding: 10px 0px;
+}
+
+.footerList ul li a {
+    color: #aa9a9a;
+    text-decoration: none;
+    transition: text-decoration .3s ease-in-out;
+}
+
+.footerList ul li a:hover {
+    text-decoration: underline;
+    color: #090909;
+}
+
+.footerList a {
+    color: #aa9a9a;
+    text-decoration: none;
+    transition: text-decoration .3s ease-in-out;
+}
+
+.footerList a:hover {
+    text-decoration: underline;
+    color: #090909;
+}
+
+.socialButtons {
+    padding: 20px 0px;
+}
+
+.socialButtons a {
+    width: 48px;
+    height: 48px;
+    background-color: #F7F7F8;
+    border-radius: 6px;
+    color: #090909;
+    text-decoration: none;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    transition: transform .5s ease;
+}
+
+.socialButtons a:hover {
+    background-color: #ffdb80;
+    transform: translateY(-5px);
+}
+
+.twitterIcon {
+    margin: 0px 8px;
+}
+
+.bottomSection .mainBox {
+    padding: 25px 0px;
+    background-color: #090909;
+}
+
+.bottomSection .mainBox .textBox {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.bottomSection .mainBox .textBox span {
+    color: #FFFF;
+}
+
+.condition span {
+    cursor: pointer;
+}
+
+.condition span:hover {
+    text-decoration: underline;
+    color: #ffdb80 !important;
+}
+
+
+/* About Section */
+.pt-100 {
+    padding-top: 100px;
+}
+
+.pb-100 {
+    padding-bottom: 100px;
+}
+
+.p-20 {
+    padding: 20px;
+}
+
+.pl-6 {
+    padding-left: 6rem;
+}
+
+.pe-6 {
+    padding-right: 6rem;
+}
+
+.p-40 {
+    padding: 40px;
+}
+
+.fs-18 {
+    font-size: 18px;
+}
+
+.fs-58 {
+    font-size: 58px;
+}
+
+.fw-7 {
+    font-weight: 700;
+}
+
+.fw-6 {
+    font-weight: 600;
+}
+
+.bg-gray {
+    background-color: #F7F7F8;
+}
+
+.bg-skyblue {
+    background-color: #CDE4E4;
+}
+
+.grayText {
+    color: #aa9a9a;
+}
+
+.blackText {
+    color: #090909;
+}
+
+.btn_padding {
+    padding: 13px 25px;
+}
+
+.btn_dark {
+    background-color: #090909;
+    color: #ffff;
+    font-weight: 600;
+}
+
+.btn_dark:hover {
+    background-color: #ffdb80;
+    color: #090909;
+    border-color: #ffdb80;
+}
+
+.badg_white,
+.badg {
+    background-color: #ffdb80;
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.badg_white {
+    background-color: #FFFFFF;
+}
+
+.fit_contain {
+    object-fit: contain;
+}
+
+.stepper {
+    position: relative;
+}
+
+.cardBox {
+    position: relative;
+}
+
+.stepper .cardBox::after {
+    position: absolute;
+    content: "";
+    /* border: 1px solid gray; */
+    height: 40px;
+    width: 40px;
+    top: 40%;
+    background-color: #F7F7F8;
+    right: -18px;
+    rotate: 45deg;
+    z-index: -1;
+}
+
+.cardBox2 {
+    position: relative;
+}
+
+.stepper .cardBox2::after {
+    position: absolute;
+    content: "";
+    /* border: 1px solid gray; */
+    height: 40px;
+    width: 40px;
+    top: 40%;
+    background-color: #F7F7F8;
+    left: -18px;
+    rotate: 45deg;
+    z-index: -1;
+}
+
+.stepperRow:hover .card-body {
+    background-color: #090909;
+    color: #ffff;
+}
+
+.stepperRow:hover .cardBox2::after,
+.stepperRow:hover .cardBox::after {
+    background-color: #090909;
+}
+
+.iconBox {
+    padding: 12px 12px;
+    width: 3.5rem;
+    height: 3.5rem;
+    border-radius: 6px;
+    background-color: #090909;
+    color: #FFFF;
+}
+
+.stepperRow:hover .iconBox {
+    background-color: #FFFF;
+    color: #090909;
+}
+
+.mainBody2,
+.mainBody {
+    display: flex;
+    gap: 20px;
+    text-align: right;
+}
+
+.mainBody2 {
+    text-align: left;
+}
+
+.hr {
+    border: 1px solid #F7F7F8;
+    height: 59.5rem;
+    width: 0;
+}
+
+.hrBox {
+    position: absolute;
+    left: 42rem;
+}
+
+.circle2,
+.circle3,
+.circle {
+    border: 1px solid #090909;
+    border-radius: 40px;
+    padding: 5px;
+    background-color: #FFFF;
+    position: absolute;
+    left: -6px;
+}
+
+.circle {
+    top: 12%;
+}
+
+.circle2 {
+    top: 48% !important;
+}
+
+.circle3 {
+    top: 86% !important;
+}
+
+.dot {
+    width: 3px;
+    height: 3px;
+    background-color: #090909;
+}
+
+.cardIcon {
+    padding: 25px 20px;
+    border-radius: 6px;
+    background-color: #CDE4E4;
+}
+
+.mainCommitment .col .card .card-body:hover .cardIcon {
+    background-color: #ffdb80;
+}
+
+.mainCommitment .col .card {
+    transition: transform .5s ease;
+}
+
+.mainCommitment .col .card:hover {
+    transform: translateY(-10px);
+}
+
+/* .stepperRow:hover .dot {
+    background-color: #090909 !important;
+} */
+
+/* media quary */
+
+@media (max-width:1103px) {
+    .textcategory {
+        position: unset;
+        height: unset;
+    }
+
+    .textBox .text {
+        max-width: unset;
+    }
+
+    .textcategory ul {
+        display: none;
+        animation: unset
+    }
+
+    .publishing {
+        display: none;
+    }
+
+    .colaboration {
+        display: none;
+    }
+
+    .engament {
+        display: none;
+    }
+
+    .landingImage {
+        width: 100%;
+    }
+
+    .texGrid {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+    }
+
+    .mainText h1 span {
+        display: unset;
+    }
+
+    .finPathGrid {
+        height: 25rem;
+    }
+}
+
+@media (max-width:600px) {
+    .landingImage {
+        width: auto !important;
+        height: 300px !important;
+    }
+}
+
+@media (max-width:403px) {
+    .landingButtons .trail {
+        margin-bottom: 10px;
+    }
+}
